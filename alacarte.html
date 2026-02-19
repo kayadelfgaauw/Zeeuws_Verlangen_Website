@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A la Carte - Restaurant Zeeuws Verlangen</title>
+    <!-- Lenis Smooth Scroll CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body class="menu-page">
+
+    <!-- Fixed Header -->
+    <header id="main-header" class="fixed-header">
+        <div class="header-container">
+            <button class="nav-link menu-trigger" aria-label="Open Menu">MENU</button>
+            <a href="index.html" class="header-logo-link">
+                <img src="Logo/Logo Zeeuws Vervangen_2025.svg" alt="Logo" class="header-logo">
+            </a>
+            <div class="header-right">
+                <div class="language-switcher">
+                    <a href="index.html" class="lang-link active" title="Nederlands">
+                        <svg viewBox="0 0 512 512">
+                            <circle cx="256" cy="256" r="256" fill="#F0F0F0" />
+                            <path fill="#AE1C28" d="M0 170.7h512V0H0z" />
+                            <path fill="#21468B" d="M0 512h512V341.3H0z" />
+                        </svg>
+                    </a>
+                    <a href="en/index.html" class="lang-link" title="English">
+                        <svg viewBox="0 0 512 512">
+                            <path fill="#F0F0F0" d="M0 0h512v512H0z" />
+                            <path fill="#00247D" d="M0 0h512v512H0z" />
+                            <path fill="#F0F0F0" d="M0 213.3h512v85.4H0z" />
+                            <path fill="#F0F0F0" d="M213.3 0h85.4v512h-85.4z" />
+                            <path fill="#F0F0F0" d="M0 0l512 512M512 0L0 512" stroke="#F0F0F0" stroke-width="64" />
+                            <path fill="#CF142B" d="M0 234.7h512v42.6H0z" />
+                            <path fill="#CF142B" d="M234.7 0h42.6v512h-42.6z" />
+                            <path fill="#CF142B" d="M0 0l512 512M512 0L0 512" stroke="#CF142B" stroke-width="25" />
+                        </svg>
+                    </a>
+                    <a href="de/index.html" class="lang-link" title="Deutsch">
+                        <svg viewBox="0 0 512 512">
+                            <path d="M0 0h512v170.7H0z" />
+                            <path fill="#D00" d="M0 170.7h512v170.6H0z" />
+                            <path fill="#FFCE00" d="M0 341.3h512V512H0z" />
+                        </svg>
+                    </a>
+                </div>
+                <a href="reserveren.html" class="nav-link book-now-link">RESERVEER</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fullscreen Menu -->
+    <nav class="fullscreen-menu" aria-hidden="true">
+        <button class="menu-close">SLUIT</button>
+        <div class="menu-content">
+            <div class="menu-left">
+                <ul class="menu-nav">
+                    <li><a href="index.html" data-image="welkom">Welkom</a></li>
+                    <li><a href="alacarte.html" data-image="restaurant">A la Carte</a></li>
+                    <li><a href="halfpension.html" data-image="terras">Halfpension</a></li>
+                    <li><a href="drinks.html" data-image="omgeving">Drinks & Cocktails</a></li>
+                    <li><a href="lunch.html" data-image="lunch">Lunch</a></li>
+                    <li><a href="index.html#contact" data-image="contact">Contact</a></li>
+                </ul>
+                <div class="menu-language-switcher">
+                    <a href="index.html" class="lang-link active" title="Nederlands">
+                        <svg viewBox="0 0 512 512">
+                            <circle cx="256" cy="256" r="256" fill="#F0F0F0" />
+                            <path fill="#AE1C28" d="M0 170.7h512V0H0z" />
+                            <path fill="#21468B" d="M0 512h512V341.3H0z" />
+                        </svg>
+                    </a>
+                    <a href="en/index.html" class="lang-link" title="English">
+                        <svg viewBox="0 0 512 512">
+                            <path fill="#F0F0F0" d="M0 0h512v512H0z" />
+                            <path fill="#00247D" d="M0 0h512v512H0z" />
+                            <path fill="#F0F0F0" d="M0 213.3h512v85.4H0z" />
+                            <path fill="#F0F0F0" d="M213.3 0h85.4v512h-85.4z" />
+                            <path fill="#F0F0F0" d="M0 0l512 512M512 0L0 512" stroke="#F0F0F0" stroke-width="64" />
+                            <path fill="#CF142B" d="M0 234.7h512v42.6H0z" />
+                            <path fill="#CF142B" d="M234.7 0h42.6v512h-42.6z" />
+                            <path fill="#CF142B" d="M0 0l512 512M512 0L0 512" stroke="#CF142B" stroke-width="25" />
+                        </svg>
+                    </a>
+                    <a href="de/index.html" class="lang-link" title="Deutsch">
+                        <svg viewBox="0 0 512 512">
+                            <path d="M0 0h512v170.7H0z" />
+                            <path fill="#D00" d="M0 170.7h512v170.6H0z" />
+                            <path fill="#FFCE00" d="M0 341.3h512V512H0z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="menu-right">
+                <img src="images/hero.webp" class="menu-image active" data-id="welkom" alt="Welkom" loading="lazy">
+                <img src="images/a_la_carte.webp" class="menu-image" data-id="restaurant" alt="A la Carte" loading="lazy">
+                <img src="images/halfpension.webp" class="menu-image" data-id="terras" alt="Halfpension" loading="lazy">
+                <img src="images/cocktails.webp" class="menu-image" data-id="omgeving" alt="Drinks & Cocktails" loading="lazy">
+                <img src="images/Lunch.webp" class="menu-image" data-id="lunch" alt="Lunch" loading="lazy">
+                <img src="images/contact.webp" class="menu-image" data-id="contact" alt="Contact" loading="lazy">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero"
+        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/a_la_carte.webp');">
+        <div class="container">
+            <h1>A la Carte</h1>
+            <p>Gastronomische vrijheid aan de Zeeuwse kust</p>
+        </div>
+    </section>
+
+    <!-- Sticky Nav -->
+    <nav class="menu-nav-sticky">
+        <ul class="menu-nav-list">
+            <li><a href="#starters">Voorgerechten</a></li>
+            <li><a href="#mains">Hoofdgerechten</a></li>
+            <li><a href="#vega">Vegetarisch</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Starters Section -->
+    <section id="starters" class="menu-section">
+        <h2 class="menu-section-title">Voorgerechten</h2>
+        <div class="menu-grid">
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Soep van de dag</h3>
+                    <span class="menu-card-price">€5,50</span>
+                </div>
+                <p class="menu-card-desc">Dagelijks wisselende soep, bereid met verse ingrediënten.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Gamba's uit de oven</h3>
+                    <span class="menu-card-price">€11,00</span>
+                </div>
+                <p class="menu-card-desc">Gamba's in knoflookolie, geserveerd met brood.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Vissoep</h3>
+                    <span class="menu-card-price">€9,50</span>
+                </div>
+                <p class="menu-card-desc">Rijke soep gevuld met diverse soorten vis en zeevruchten.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Mosselen uit de oven</h3>
+                    <span class="menu-card-price">€9,50</span>
+                </div>
+                <p class="menu-card-desc">Zeeuwse mosselen met kruidenboter en kaas gratinee.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Uiensoep gegratineerd</h3>
+                    <span class="menu-card-price">€7,00</span>
+                </div>
+                <p class="menu-card-desc">Rijke uiensoep met gegratineerde kaas.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Carpaccio vlees of vis (gerookte zalm)</h3>
+                    <span class="menu-card-price">€12,50</span>
+                </div>
+                <p class="menu-card-desc">Dungesneden runderhaas of gerookte zalm met truffelmayonaise en Parmezaan.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Plantaardige gerookte zalm</h3>
+                    <span class="menu-card-price">€12,50</span>
+                </div>
+                <p class="menu-card-desc">Verrassend plantaardig alternatief, nauwelijks van echt te onderscheiden.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Calamaris met knoflooksaus</h3>
+                    <span class="menu-card-price">€8,50</span>
+                </div>
+                <p class="menu-card-desc">Krokant gebakken calamaris met huisgemaakte knoflooksaus.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Brood met hummus of tzatziki of fetasalade</h3>
+                    <span class="menu-card-price">€6,50</span>
+                </div>
+                <p class="menu-card-desc">Vers brood met een dip naar keuze.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Brood met combinatie van hummus, tzatziki en fetasalade</h3>
+                    <span class="menu-card-price">€8,50</span>
+                </div>
+                <p class="menu-card-desc">Vers brood met alle drie de dips.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mains Section -->
+    <section id="mains" class="menu-section">
+        <h2 class="menu-section-title">Hoofdgerechten Vlees & Vis</h2>
+
+        <h3 style="text-align: center; margin-bottom: 30px; color: var(--color-slate);">Vlees</h3>
+        <div class="menu-grid" style="margin-bottom: 60px;">
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Varkenshaas</h3>
+                    <span class="menu-card-price">€21,50</span>
+                </div>
+                <p class="menu-card-desc">Met pittige chimichurri en verse seizoensgroenten.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Spareribs</h3>
+                    <span class="menu-card-price">€22,50</span>
+                </div>
+                <p class="menu-card-desc">Huisgemarineerde spareribs, botermals gegaard.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Entrecote</h3>
+                    <span class="menu-card-price">€26,50</span>
+                </div>
+                <p class="menu-card-desc">Gegrilde entrecote met kruidenboter en gegrilde groenten.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Smashburger</h3>
+                    <span class="menu-card-price">€17,50</span>
+                </div>
+                <p class="menu-card-desc">Sappige burger met cheddar, bacon en onze geheime saus.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Kipreepjes oosterse stijl</h3>
+                    <span class="menu-card-price">€18,50</span>
+                </div>
+                <p class="menu-card-desc">Malse kipreepjes op oosterse wijze bereid.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Schnitzel van het huis</h3>
+                    <span class="menu-card-price">€19,50</span>
+                </div>
+                <p class="menu-card-desc">Klassieke gepaneerde varkensschnitzel met dragonsaus.</p>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; margin-bottom: 30px; color: var(--color-slate);">Vis</h3>
+        <div class="menu-grid">
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Zalmfilet</h3>
+                    <span class="menu-card-price">€21,50</span>
+                </div>
+                <p class="menu-card-desc">Op de huid gebakken met een zachte paprika-roomsaus.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Kabeljauwfilet</h3>
+                    <span class="menu-card-price">€24,50</span>
+                </div>
+                <p class="menu-card-desc">Uit de oven met een korst van mediterrane kruiden.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Gebakken scholfilet</h3>
+                    <span class="menu-card-price">€19,50</span>
+                </div>
+                <p class="menu-card-desc">Vers gevangen schol, goudbruin gebakken in roomboter.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Gepelde gamba's</h3>
+                    <span class="menu-card-price">€26,50</span>
+                </div>
+                <p class="menu-card-desc">Van de grill met citroen en peterselie-olie.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Catch of the Day</h3>
+                    <span class="menu-card-price">Prijs v.d. dag</span>
+                </div>
+                <p class="menu-card-desc">Vraag onze bediening naar de vangst van vandaag.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vega Section -->
+    <section id="vega" class="menu-section">
+        <h2 class="menu-section-title">Vegetarisch</h2>
+        <div class="menu-grid">
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Vegetarische lasagne</h3>
+                    <span class="menu-card-price">€16,50</span>
+                </div>
+                <p class="menu-card-desc">Met verse bladspinazie, ricotta en een rijke tomatensaus.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Tagliatelle Putanesca</h3>
+                    <span class="menu-card-price">€15,50</span>
+                </div>
+                <p class="menu-card-desc">Met kappertjes, olijven, chili en cherrytomaatjes.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Pizza Verdura</h3>
+                    <span class="menu-card-price">€18,50</span>
+                </div>
+                <p class="menu-card-desc">Rijkelijk belegd met gegrilde paprika, courgette en aubergine.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Ravioli met spinazie, ricotta en roomsaus</h3>
+                    <span class="menu-card-price">€16,50</span>
+                </div>
+                <p class="menu-card-desc">Huisgemaakte ravioli gevuld met spinazie en ricotta in een romige saus.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Ravioli uit de oven met tomatensaus en kaas</h3>
+                    <span class="menu-card-price">€17,50</span>
+                </div>
+                <p class="menu-card-desc">Ovengratineerde ravioli met tomatensaus en gesmolten kaas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts Section -->
+    <section id="desserts" class="menu-section">
+        <h2 class="menu-section-title">Desserts</h2>
+        <div class="menu-grid">
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Cheesecake</h3>
+                    <span class="menu-card-price">€8,50</span>
+                </div>
+                <p class="menu-card-desc">Huisgemaakt met een coulis van rood fruit.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Tiramisu</h3>
+                    <span class="menu-card-price">€8,50</span>
+                </div>
+                <p class="menu-card-desc">Klassiek Italiaans met een vleugje amaretto.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Dame Blanche</h3>
+                    <span class="menu-card-price">€8,50</span>
+                </div>
+                <p class="menu-card-desc">Vanille-ijs met warme chocoladesaus en slagroom.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Sorbet</h3>
+                    <span class="menu-card-price">€8,50</span>
+                </div>
+                <p class="menu-card-desc">Drie bollen sorbetijs met vers fruit.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Zeeuwse bolus met ijs</h3>
+                    <span class="menu-card-price">€8,50</span>
+                </div>
+                <p class="menu-card-desc">De echte Zeeuwse bolus, geserveerd met vanille-ijs en karamelsaus.</p>
+            </div>
+            <div class="menu-card scroll-reveal">
+                <div class="menu-card-header">
+                    <h3 class="menu-card-title">Kinderijsje</h3>
+                    <span class="menu-card-price">€5,00</span>
+                </div>
+                <p class="menu-card-desc">Een bolletje ijs voor de kleintjes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col footer-logo-col">
+                <img src="Logo/Logo Zeeuws Vervangen_2025.svg" alt="Zeeuws Verlangen" class="footer-logo">
+            </div>
+            <div class="footer-col">
+                <h4>Overnachten</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Hotelkamers & Studios</a></li>
+                    <li><a href="#">Vakantiewoningen & Ecolodges</a></li>
+                    <li><a href="#">Kamperen</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Ontdek het Resort</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Restaurant Zeeuws Verlangen</a></li>
+                    <li><a href="#">Bijeenkomsten & Feesten</a></li>
+                    <li><a href="index.html#about">Over ons</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resort Land & Zee</h4>
+                <div class="footer-contact-info">
+                    <p>Rampweg 28, 4326 LK Scharendijke</p>
+                    <p><a href="tel:+31111671785">+31 (0)111 671 785</a></p>
+                    <p><a href="mailto:info@landenzee.nl">info@landenzee.nl</a></p>
+                </div>
+                <div class="footer-socials" style="margin-top: 25px;">
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.04c-5.5 0-10 4.5-10 10 0 5 3.66 9.12 8.44 9.88v-6.99h-2.54v-2.89h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.89h-2.33v6.99C18.34 21.16 22 17.04 22 12.04c0-5.5-4.5-10-10-10z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.22.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.22.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.05-.41-2.22-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.22-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.77.13 4.9.33 4.14.62c-.78.3-1.44.71-2.11 1.38S1.12 3.36.82 4.14C.53 4.9.33 5.77.27 7.05.21 8.33.2 8.74.2 12s.01 3.67.07 4.95c.06 1.28.26 2.15.55 2.91.3.78.71 1.44 1.38 2.11s1.33 1.08 2.11 1.38c.76.29 1.63.49 2.91.55 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.55.78-.3 1.44-.71 2.11-1.38s1.08-1.33 1.38-2.11c.29-.76.49-1.63.55-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.55-2.91-.3-.78-.71-1.44-1.38-2.11s-1.33-1.08-2.11-1.38c-.76-.29-1.63-.49-2.91-.55C15.67.01 15.26 0 12 0z" />
+                            <path
+                                d="M12 5.84A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84zm0 10.16A4 4 0 1116 12a4 0 01-4 4z" />
+                            <path d="M18.41 4.26a1.44 1.44 0 101.44 1.44 1.44 1.44 0 00-1.44-1.44z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-legal-links">
+                <a href="juridisch.html#colofon">Colofon</a>
+                <a href="juridisch.html#disclaimer">Disclaimer</a>
+                <a href="juridisch.html#privacy">Privacy</a>
+            </div>
+            <p class="copyright">&copy; 2026 Restaurant Zeeuws Verlangen</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

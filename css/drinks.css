@@ -1,0 +1,406 @@
+/* ==========================================================================
+   DRINKS PAGE — Typography-First Editorial Redesign
+   Restaurant Zeeuws Verlangen
+   ========================================================================== */
+
+/* --- Override base drinks-page styles --- */
+.drinks-page {
+    background-color: #FAF8F5;
+    color: #2f4356;
+}
+
+.drinks-page .menu-hero {
+    background-color: #FAF8F5;
+    color: #ffffff;
+    padding: 180px 5vw 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.drinks-page .menu-hero h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(3.5rem, 10vw, 7rem);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    line-height: 0.95;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.drinks-page .menu-hero p {
+    font-family: var(--font-body);
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: #f0f0f0;
+    letter-spacing: 2px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Hero horizon SVG decoration */
+.hero-horizon {
+    display: block;
+    margin: 50px auto 0;
+    width: min(80%, 500px);
+    height: 2px;
+    opacity: 0.3;
+}
+
+/* ==========================================================================
+   CLIP-PATH ORGANIC BACKGROUND SHAPES — Dunes & Waves
+   ========================================================================== */
+
+.drinks-bg-shapes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.dune-shape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.dune-shape--top {
+    top: -60%;
+    right: -20%;
+    width: 80%;
+    height: 90%;
+    background: #EDE9E3;
+    clip-path: ellipse(70% 50% at 80% 30%);
+    opacity: 0.4;
+}
+
+.dune-shape--mid {
+    bottom: 10%;
+    left: -30%;
+    width: 90%;
+    height: 60%;
+    background: linear-gradient(135deg, #E8E2DA 0%, #F0ECE6 100%);
+    clip-path: ellipse(60% 45% at 30% 70%);
+    opacity: 0.35;
+}
+
+.dune-shape--bottom {
+    bottom: -20%;
+    right: -10%;
+    width: 70%;
+    height: 50%;
+    background: #EBE6DE;
+    clip-path: polygon(0% 60%,
+            10% 55%,
+            25% 58%,
+            40% 50%,
+            55% 53%,
+            70% 48%,
+            85% 52%,
+            100% 45%,
+            100% 100%,
+            0% 100%);
+    opacity: 0.3;
+}
+
+/* ==========================================================================
+   MENU CONTENT WRAPPER
+   ========================================================================== */
+
+.drinks-page .menu-section {
+    background-color: transparent !important;
+    position: relative;
+    z-index: 1;
+    padding: 40px 5vw 100px;
+}
+
+/* ==========================================================================
+   CATEGORY SECTIONS
+   ========================================================================== */
+
+.cocktail-category {
+    max-width: 1400px;
+    margin: 0 auto 100px;
+    position: relative;
+}
+
+.cocktail-category:last-child {
+    margin-bottom: 0;
+}
+
+/* Category header */
+.category-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.category-label {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.65rem, 1.2vw, 0.8rem);
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #D4AF37;
+    margin-bottom: 12px;
+}
+
+.category-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    color: #2f4356;
+    text-transform: none;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.category-divider {
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: #D4AF37;
+    margin: 0 auto;
+    opacity: 0.6;
+}
+
+/* ==========================================================================
+   MODULAR GRID FOR DRINKS
+   ========================================================================== */
+
+.cocktail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 60px;
+}
+
+/* Individual drink article */
+.drink-article {
+    position: relative;
+    padding: 0;
+}
+
+/* Drink name with SVG hover underline */
+.drink-name-wrap {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+    margin-bottom: 6px;
+}
+
+.drink-name {
+    font-family: var(--font-heading);
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    color: #2f4356;
+    line-height: 1.2;
+    display: inline;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+/* SVG hand-drawn underline */
+.drink-underline-svg {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    overflow: visible;
+}
+
+.drink-underline-svg path {
+    fill: none;
+    stroke: #D4AF37;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    transition: stroke-dashoffset 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.drink-name-wrap:hover .drink-underline-svg path {
+    stroke-dashoffset: 0;
+}
+
+/* Price */
+.drink-price {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #7C898B;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* Description */
+.drink-desc {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #7C898B;
+    font-style: italic;
+}
+
+/* Top choice badge */
+.top-choice-badge {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
+    padding: 4px 12px;
+    margin-bottom: 10px;
+}
+
+/* Sub-variants (e.g., gin tonic brands) */
+.drink-variants {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.drink-variants li {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: #7C898B;
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 280px;
+}
+
+.drink-variants li span:last-child {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   SVG LINE ART DECORATIONS
+   ========================================================================== */
+
+.section-decoration {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 60px;
+    opacity: 0.15;
+}
+
+.section-decoration svg {
+    width: clamp(80px, 15vw, 160px);
+    height: auto;
+}
+
+/* ==========================================================================
+   SCROLL TEXT-REVEAL ANIMATION
+   ========================================================================== */
+
+.drink-reveal {
+    opacity: 0;
+    filter: blur(4px);
+    transform: translateY(15px);
+    transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s ease;
+}
+
+.drink-reveal.revealed {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+/* Stagger children */
+.drink-article:nth-child(2) .drink-reveal {
+    transition-delay: 0.1s;
+}
+
+.drink-article:nth-child(3) .drink-reveal {
+    transition-delay: 0.2s;
+}
+
+.drink-article:nth-child(4) .drink-reveal {
+    transition-delay: 0.15s;
+}
+
+/* ==========================================================================
+   FOOTER OVERRIDE — keep cream background
+   ========================================================================== */
+
+.drinks-page .main-footer {
+    background-color: #FAF8F5;
+    position: relative;
+    z-index: 1;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .cocktail-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 50px;
+    }
+
+    .cocktail-category {
+        margin-bottom: 80px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .drinks-page .menu-hero {
+        padding: 140px 5vw 50px;
+    }
+
+    .cocktail-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .cocktail-category {
+        margin-bottom: 60px;
+    }
+
+    .category-header {
+        margin-bottom: 40px;
+    }
+
+    .dune-shape--top {
+        opacity: 0.25;
+    }
+
+    .dune-shape--mid {
+        opacity: 0.2;
+    }
+
+    .dune-shape--bottom {
+        opacity: 0.2;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .drinks-page .menu-hero h1 {
+        letter-spacing: 3px;
+    }
+
+    .category-title {
+        font-size: 2rem;
+    }
+
+    .drink-name {
+        font-size: 1.2rem;
+    }
+}
