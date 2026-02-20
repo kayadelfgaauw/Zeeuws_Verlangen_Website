@@ -378,7 +378,7 @@ h4,
     /* Removed extra line above languages */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .menu-right {
         display: none;
         /* Hide images on mobile */
@@ -396,11 +396,33 @@ h4,
         justify-content: center;
         /* Center languages */
         margin-top: 30px;
+        gap: 20px;
     }
 
-    .menu-language-switcher .lang-link {
+    .menu-lang-link {
         width: 35px;
         height: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        opacity: 0.8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+    }
+
+    .menu-lang-link svg {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.1);
+        display: block;
+    }
+
+    .menu-lang-link:hover,
+    .menu-lang-link.active {
+        opacity: 1;
+        transform: scale(1.1);
     }
 }
 
@@ -430,7 +452,7 @@ h4,
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     header .language-switcher {
         display: none;
     }
@@ -445,18 +467,33 @@ h4,
     border-radius: 50%;
     overflow: hidden;
     background: transparent;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 0.8;
 }
 
 .lang-link svg {
     width: 100%;
     height: 100%;
     transform: scale(1.1);
-    object-fit: cover;
+    display: block;
 }
 
-.lang-link:hover {
+.lang-link:hover,
+.lang-link.active {
+    opacity: 1;
     transform: scale(1.1);
+}
+
+.lang-separator {
+    display: none;
+    color: var(--color-white);
+    opacity: 0.3;
+    font-size: 14px;
+    margin: 0 2px;
+}
+
+.fixed-header.scrolled .lang-separator {
+    color: var(--color-text);
 }
 
 /* --- Section Specific Styles --- */
@@ -1050,10 +1087,14 @@ h4,
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 60px;
     margin-bottom: 80px;
     text-align: left;
+}
+
+.footer-grid>.footer-col:nth-child(2) {
+    margin-left: auto;
 }
 
 .footer-col h4 {
@@ -1191,6 +1232,10 @@ h4,
         grid-template-columns: 1fr;
         text-align: left;
         gap: 40px;
+    }
+
+    .footer-grid>.footer-col:nth-child(2) {
+        margin-left: 0;
     }
 
     .footer-socials {

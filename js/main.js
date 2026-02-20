@@ -27,6 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 e.preventDefault();
+
+                // Close menu if open
+                if (fullscreenMenu && fullscreenMenu.classList.contains('active')) {
+                    fullscreenMenu.classList.remove('active');
+                    lenis.start();
+                }
+
                 lenis.scrollTo(targetElement, {
                     duration: 1.5 // Snelheid voor anker-links zoals gevraagd
                 });

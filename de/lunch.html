@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="de-DE">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lunch - Restaurant Zeeuws Verlangen</title>
-    <meta name="description" content="Lunch on the Zeeland coast at Restaurant Zeeuws Verlangen – fresh sandwiches, salads and warm dishes in a relaxed atmosphere at Resort Land &amp; Zee.">
+    <title>Mittagessen - Restaurant Zeeuws Verlangen</title>
+    <meta name="description" content="Mittagessen an der seeländischen Küste im Restaurant Zeeuws Verlangen – frische Brötchen, Salate und warme Gerichte in entspannter Atmosphäre im Resort Land &amp; Zee.">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
@@ -21,10 +21,9 @@
 
 <body class="menu-page">
 
-    <!-- Fixed Header -->
     <header id="main-header" class="fixed-header">
         <div class="header-container">
-            <button class="nav-link menu-trigger" aria-label="Open Menu">MENU</button>
+            <button class="nav-link menu-trigger" aria-label="Menü öffnen">MENÜ</button>
             <a href="index.html" class="header-logo-link">
                 <img src="../Logo/Logo Zeeuws Vervangen_2025.svg" alt="Logo" class="header-logo">
             </a>
@@ -43,7 +42,7 @@
 </svg>
                     </a>
                     <span class="lang-separator">|</span>
-                    <a href="lunch.html" class="lang-link active" title="English">
+                    <a href="../en/lunch.html" class="lang-link" title="English">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
     <!-- De ronde blauwe basis -->
     <circle cx="256" cy="256" r="256" fill="#00247D" />
@@ -64,7 +63,7 @@
 </svg>
                     </a>
                     <span class="lang-separator">|</span>
-                    <a href="../de/lunch.html" class="lang-link" title="Deutsch">
+                    <a href="lunch.html" class="lang-link active" title="Deutsch">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
     <!-- Witte cirkel als basis -->
     <circle cx="256" cy="256" r="256" fill="#F0F0F0" />
@@ -80,23 +79,22 @@
 </svg>
                     </a>
                 </div>
-                <a href="reserve.html" class="nav-link book-now-link">RESERVE</a>
+                <a href="reservieren.html" class="nav-link book-now-link">RESERVIEREN</a>
             </div>
         </div>
     </header>
 
-    <!-- Fullscreen Menu -->
     <nav class="fullscreen-menu" aria-hidden="true">
-        <button class="menu-close">CLOSE</button>
+        <button class="menu-close">SCHLIESSEN</button>
         <div class="menu-content">
             <div class="menu-left">
                 <ul class="menu-nav">
-                    <li><a href="index.html" data-image="welkom">Welcome</a></li>
+                    <li><a href="index.html" data-image="welkom">Willkommen</a></li>
                     <li><a href="alacarte.html" data-image="restaurant">A la Carte</a></li>
-                    <li><a href="halfpension.html" data-image="terras">Half-board</a></li>
+                    <li><a href="halfpension.html" data-image="terras">Halbpension</a></li>
                     <li><a href="drinks.html" data-image="omgeving">Drinks & Cocktails</a></li>
-                    <li><a href="lunch.html" data-image="lunch">Lunch</a></li>
-                    <li><a href="index.html#contact" data-image="contact">Contact</a></li>
+                    <li><a href="lunch.html" data-image="lunch">Mittagessen</a></li>
+                    <li><a href="index.html#contact" data-image="contact">Kontakt</a></li>
                 </ul>
                 <div class="menu-language-switcher">
                     <a href="../lunch.html" class="menu-lang-link" title="Nederlands">
@@ -111,7 +109,7 @@
     <path fill="#21468B" d="M0 512h512V341.3H0z" />
 </svg>
                     </a>
-                    <a href="lunch.html" class="menu-lang-link active" title="English">
+                    <a href="../en/lunch.html" class="menu-lang-link" title="English">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
     <!-- De ronde blauwe basis -->
     <circle cx="256" cy="256" r="256" fill="#00247D" />
@@ -131,7 +129,7 @@
         d="m334 334 178 178v-11.3l-166.7-166.7H334zM178 178 0 0v11.3l166.7 166.7H178zM178 334 0 512v-11.3l166.7-166.7H178zM334 178 512 0v11.3L345.3 178H334z" />
 </svg>
                     </a>
-                    <a href="../de/lunch.html" class="menu-lang-link" title="Deutsch">
+                    <a href="lunch.html" class="menu-lang-link active" title="Deutsch">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
     <!-- Witte cirkel als basis -->
     <circle cx="256" cy="256" r="256" fill="#F0F0F0" />
@@ -149,7 +147,8 @@
                 </div>
             </div>
             <div class="menu-right">
-                <img src="../images/hero.webp" class="menu-image active" data-id="welkom" alt="Panoramisch uitzicht op het zonnige terras van Restaurant Zeeuws Verlangen met gasten in witte loungezetels aan het water onder een iconisch golvend dak." loading="lazy">
+                <img src="../images/hero.webp" class="menu-image active" data-id="welkom" alt="Panoramisch uitzicht op het zonnige terras van Restaurant Zeeuws Verlangen met gasten in witte loungezetels aan het water onder een iconisch golvend dak."
+                    loading="lazy">
                 <img src="../images/a_la_carte.webp" class="menu-image" data-id="restaurant" alt="Een verfijnd à la carte dinergerecht met op de huid gebakken zalm, doperwtenpuree en een romige saus, gepresenteerd op een rustiek bord."
                     loading="lazy">
                 <img src="../images/halfpension.webp" class="menu-image" data-id="terras" alt="Een smaakvol hoofdgerecht uit het halfpension menu met malse kip, verse groenten en doperwtenmousseline in een duinsetsetting."
@@ -162,107 +161,104 @@
         </div>
     </nav>
 
-    <!-- Menu Hero -->
     <section class="menu-hero"
         style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/Lunch.webp');">
         <div class="container">
-            <h1>Lunch</h1>
-            <p>Enjoy a delightful lunch on the Zeeland coast</p>
+            <h1>Mittagessen</h1>
+            <p>Genießen Sie ein köstliches Mittagessen an der zeeländischen Küste</p>
         </div>
     </section>
 
-    <!-- Lunch Items Section -->
     <section id="lunch-items" class="menu-section">
         <div class="menu-grid">
             <div class="menu-card scroll-reveal">
                 <div class="menu-card-header">
-                    <h3 class="menu-card-title">Ham & Cheese Uitsmijter</h3>
-                    <span class="menu-card-price">€9.50</span>
+                    <h3 class="menu-card-title">Spiegelei-Brötchen mit Schinken & Käse</h3>
+                    <span class="menu-card-price">€9,50</span>
                 </div>
-                <p class="menu-card-desc">Three fried eggs with ham and cheese, served on rustic Zeeland bread with a
-                    small salad.</p>
+                <p class="menu-card-desc">Drei Spiegeleier mit Schinken und Käse, serviert auf rustikalem zeeländischem
+                    Brot mit einem kleinen Salat.</p>
             </div>
             <div class="menu-card scroll-reveal">
                 <div class="menu-card-header">
-                    <h3 class="menu-card-title">Beef croquettes on bread</h3>
-                    <span class="menu-card-price">€8.50</span>
+                    <h3 class="menu-card-title">Rindfleischkroketten auf Brot</h3>
+                    <span class="menu-card-price">€8,50</span>
                 </div>
-                <p class="menu-card-desc">Two beef croquettes on rustic Zeeland bread, served with mustard and a
-                    small salad.</p>
+                <p class="menu-card-desc">Zwei Rindfleischkroketten auf rustikalem zeeländischem Brot, serviert mit Senf
+                    und einem kleinen Salat.</p>
             </div>
             <div class="menu-card scroll-reveal">
                 <div class="menu-card-header">
-                    <h3 class="menu-card-title">Carpaccio sandwich</h3>
-                    <span class="menu-card-price">€14.00</span>
+                    <h3 class="menu-card-title">Carpaccio-Sandwich</h3>
+                    <span class="menu-card-price">€14,00</span>
                 </div>
-                <p class="menu-card-desc">Thinly sliced beef carpaccio on rustic Zeeland bread, with rocket,
-                    pine nuts, Parmesan and truffle mayonnaise.</p>
+                <p class="menu-card-desc">Hauchdünn geschnittenes Rinder-Carpaccio auf rustikalem zeeländischem Brot mit
+                    Rucola, Pinienkernen, Parmesan und Trüffelmayonnaise.</p>
             </div>
             <div class="menu-card scroll-reveal">
                 <div class="menu-card-header">
-                    <h3 class="menu-card-title">Smoked salmon on bread</h3>
-                    <span class="menu-card-price">€14.00</span>
+                    <h3 class="menu-card-title">Räucherlachs auf Brot</h3>
+                    <span class="menu-card-price">€14,00</span>
                 </div>
-                <p class="menu-card-desc">Smoked salmon on rustic Zeeland bread with cream cheese, red onion, capers
-                    and a small salad.</p>
+                <p class="menu-card-desc">Räucherlachs auf rustikalem zeeländischem Brot mit Frischkäse, roter Zwiebel,
+                    Kapern und einem kleinen Salat.</p>
             </div>
             <div class="menu-card scroll-reveal">
                 <div class="menu-card-header">
-                    <h3 class="menu-card-title">Ham & Cheese Toastie</h3>
-                    <span class="menu-card-price">€6.50</span>
+                    <h3 class="menu-card-title">Toast Schinken & Käse</h3>
+                    <span class="menu-card-price">€6,50</span>
                 </div>
-                <p class="menu-card-desc">Toasted rustic Zeeland bread with ham and cheese, served with ketchup and a
-                    small salad.</p>
+                <p class="menu-card-desc">Getoastetes rustikales zeeländisches Brot mit Schinken und Käse, serviert mit
+                    Ketchup und einem kleinen Salat.</p>
             </div>
             <div class="menu-card scroll-reveal">
                 <div class="menu-card-header">
-                    <h3 class="menu-card-title">Soup of the day</h3>
-                    <span class="menu-card-price">€5.50</span>
+                    <h3 class="menu-card-title">Tagessuppe</h3>
+                    <span class="menu-card-price">€5,50</span>
                 </div>
-                <p class="menu-card-desc">Freshly prepared daily soup, served with rustic Zeeland bread. Ask our staff
-                    about today's soup.</p>
+                <p class="menu-card-desc">Täglich frisch zubereitete Suppe, serviert mit rustikalem zeeländischem Brot.
+                    Fragen Sie unser Personal nach der heutigen Suppe.</p>
             </div>
             <div class="menu-card scroll-reveal">
                 <div class="menu-card-header">
-                    <h3 class="menu-card-title">Chips with a snack</h3>
-                    <span class="menu-card-price">€8.50</span>
+                    <h3 class="menu-card-title">Pommes frites mit Snack</h3>
+                    <span class="menu-card-price">€8,50</span>
                 </div>
-                <p class="menu-card-desc">Chips with a snack of your choice: frikandel, croquette, cheese soufflé or
-                    chicken nuggets. With sauce of your choice.</p>
+                <p class="menu-card-desc">Pommes frites mit einem Snack Ihrer Wahl: Frikandel, Krokette, Käsesoufflé
+                    oder Chicken Nuggets. Mit Sauce nach Wahl.</p>
             </div>
             <div class="menu-card scroll-reveal">
                 <div class="menu-card-header">
                     <h3 class="menu-card-title">Cheeseburger</h3>
-                    <span class="menu-card-price">€17.50</span>
+                    <span class="menu-card-price">€17,50</span>
                 </div>
-                <p class="menu-card-desc">Beef burger with cheese, lettuce, tomato and barbecue sauce, served with
-                    chips and a small salad.</p>
+                <p class="menu-card-desc">Rindfleisch-Burger mit Käse, Salat, Tomate und Barbecuesauce, serviert mit
+                    Pommes frites und einem kleinen Salat.</p>
             </div>
         </div>
 
         <div class="allergy-info"
             style="text-align: center; margin-top: 50px; color: var(--color-slate); font-family: 'Gabriola', cursive; font-size: 1.5rem;">
-            DO YOU HAVE ANY ALLERGIES? PLEASE LET US KNOW,
+            HABEN SIE ALLERGIEN? BITTE TEILEN SIE UNS DIES MIT,
             <br>
-            WE ARE HAPPY TO ACCOMMODATE.
+            WIR HELFEN IHNEN GERNE WEITER.
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="main-footer">
         <div class="footer-grid">
             <div class="footer-col footer-logo-col">
                 <img src="../Logo/Logo Zeeuws Vervangen_2025.svg" alt="Zeeuws Verlangen" class="footer-logo">
             </div>
             <div class="footer-col">
-                <h4>Pages</h4>
+                <h4>Seiten</h4>
                 <ul class="footer-links">
-                    <li><a href="index.html">Welcome</a></li>
+                    <li><a href="index.html">Willkommen</a></li>
                     <li><a href="alacarte.html">A la Carte</a></li>
-                    <li><a href="halfpension.html">Half-board</a></li>
+                    <li><a href="halfpension.html">Halbpension</a></li>
                     <li><a href="drinks.html">Drinks & Cocktails</a></li>
-                    <li><a href="lunch.html">Lunch</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="lunch.html">Mittagessen</a></li>
+                    <li><a href="index.html#contact">Kontakt</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -272,26 +268,13 @@
                     <p><a href="tel:+31111671785">+31 (0)111 671 785</a></p>
                     <p><a href="mailto:info@landenzee.nl">info@landenzee.nl</a></p>
                 </div>
-                <div class="footer-socials" style="margin-top: 25px;">
-                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24">
-                            <path
-                                d="M12 2.04c-5.5 0-10 4.5-10 10 0 5 3.66 9.12 8.44 9.88v-6.99h-2.54v-2.89h2.54V9.85c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.89h-2.33v6.99C18.34 21.16 22 17.04 22 12.04c0-5.5-4.5-10-10-10z" />
-                        </svg></a>
-                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24">
-                            <path
-                                d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.05.41 2.22.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.05.36-2.22.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.05-.41-2.22-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.05-.36 2.22-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.77.13 4.9.33 4.14.62c-.78.3-1.44.71-2.11 1.38S1.12 3.36.82 4.14C.53 4.9.33 5.77.27 7.05.21 8.33.2 8.74.2 12s.01 3.67.07 4.95c.06 1.28.26 2.15.55 2.91.3.78.71 1.44 1.38 2.11s1.33 1.08 2.11 1.38c.76.29 1.63.49 2.91.55 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.55.78-.3 1.44-.71 2.11-1.38s1.08-1.33 1.38-2.11c.29-.76.49-1.63.55-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.55-2.91-.3-.78-.71-1.44-1.38-2.11s-1.33-1.08-2.11-1.38c-.76-.29-1.63-.49-2.91-.55C15.67.01 15.26 0 12 0z" />
-                            <path
-                                d="M12 5.84A6.16 6.16 0 1018.16 12 6.16 6.16 0 0012 5.84zm0 10.16A4 4 0 1116 12a4 4 0 01-4 4z" />
-                            <path d="M18.41 4.26a1.44 1.44 0 101.44 1.44 1.44 1.44 0 00-1.44-1.44z" />
-                        </svg></a>
-                </div>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="footer-legal-links">
-                <a href="legal.html#colofon">Colophon</a>
-                <a href="legal.html#disclaimer">Disclaimer</a>
-                <a href="legal.html#privacy">Privacy</a>
+                <a href="rechtliches.html#colofon">Impressum</a>
+                <a href="rechtliches.html#disclaimer">Haftungsausschluss</a>
+                <a href="rechtliches.html#privacy">Datenschutz</a>
             </div>
             <p class="copyright">&copy; 2026 Restaurant Zeeuws Verlangen</p>
         </div>
