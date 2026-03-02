@@ -167,6 +167,23 @@
     opacity: 0.6;
 }
 
+/* Subcategory headings (e.g. "Van het vat", "Uit de fles") */
+.drink-subcategory-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.75rem, 1.4vw, 0.9rem);
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #D4AF37;
+    text-align: center;
+    margin: 50px 0 30px;
+    position: relative;
+}
+
+.drink-subcategory-title:first-of-type {
+    margin-top: 0;
+}
+
 /* ==========================================================================
    MODULAR GRID FOR DRINKS
    ========================================================================== */
