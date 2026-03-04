@@ -7,6 +7,16 @@
     <title>A la Carte - Restaurant Zeeuws Verlangen</title>
     <meta name="description"
         content="Ontdek de à la carte menukaart van Restaurant Zeeuws Verlangen – van dagverse vis en schaal- en schelpdieren tot verfijnde vleesgerechten, geïnspireerd door de Zeeuwse kust.">
+    <link rel="canonical" href="https://www.landenzee.nl/alacarte.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="A la Carte - Restaurant Zeeuws Verlangen">
+    <meta property="og:description"
+        content="Ontdek de à la carte menukaart van Restaurant Zeeuws Verlangen – van dagverse vis en schaal- en schelpdieren tot verfijnde vleesgerechten, geïnspireerd door de Zeeuwse kust.">
+    <meta property="og:url" content="https://www.landenzee.nl/alacarte.html">
+    <meta property="og:image" content="https://www.landenzee.nl/images/a_la_carte.webp">
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:site_name" content="Zeeuws Verlangen">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/alacarte.html">
@@ -18,6 +28,50 @@
     <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Menu",
+      "name": "A la Carte",
+      "url": "https://www.landenzee.nl/alacarte.html",
+      "description": "A la carte menukaart van Restaurant Zeeuws Verlangen – verfijnde Zeeuwse keuken met verse, seizoensgebonden ingrediënten.",
+      "hasMenuSection": [
+        {
+          "@type": "MenuSection",
+          "name": "Voorgerechten",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Soep van de dag", "offers": { "@type": "Offer", "price": "6.50", "priceCurrency": "EUR" } },
+            { "@type": "MenuItem", "name": "Carpaccio van rund", "description": "Met rucola, pijnboompitten, Parmezaan en truffelmayonaise", "offers": { "@type": "Offer", "price": "14.50", "priceCurrency": "EUR" } },
+            { "@type": "MenuItem", "name": "Zeeuwse garnalen", "description": "Met knoflookboter en brood", "offers": { "@type": "Offer", "price": "13.50", "priceCurrency": "EUR" } }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Vis",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Zeebaars", "description": "Gebakken zeebaarsfilet met seizoensgroenten", "offers": { "@type": "Offer", "price": "24.50", "priceCurrency": "EUR" } },
+            { "@type": "MenuItem", "name": "Fish & Chips", "description": "Kabeljauw in bierbeslag met frietjes en ravigottesaus", "offers": { "@type": "Offer", "price": "19.50", "priceCurrency": "EUR" } }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Vlees",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Entrecôte", "description": "300 gram entrecôte met kruidenboter en seizoensgroenten", "offers": { "@type": "Offer", "price": "29.50", "priceCurrency": "EUR" } },
+            { "@type": "MenuItem", "name": "Spareribs", "description": "Langzaam gegaarde spareribs met barbecuesaus en frietjes", "offers": { "@type": "Offer", "price": "22.50", "priceCurrency": "EUR" } }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Nagerechten",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Dame Blanche", "offers": { "@type": "Offer", "price": "8.50", "priceCurrency": "EUR" } },
+            { "@type": "MenuItem", "name": "Crème brûlée", "offers": { "@type": "Offer", "price": "9.50", "priceCurrency": "EUR" } }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body class="menu-page">

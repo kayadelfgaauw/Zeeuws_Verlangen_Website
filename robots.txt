@@ -1,0 +1,7 @@
+# Robots.txt – Restaurant Zeeuws Verlangen
+# https://www.landenzee.nl
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.landenzee.nl/sitemap.xml

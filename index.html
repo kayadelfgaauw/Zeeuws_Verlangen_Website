@@ -7,6 +7,18 @@
     <title>Restaurant Zeeuws Verlangen - Welkom</title>
     <meta name="description"
         content="Restaurant Zeeuws Verlangen bij Resort Land &amp; Zee in Scharendijke – geniet van verfijnde Zeeuwse gerechten, verse seizoensproducten en een adembenemend uitzicht op de kust.">
+    <link rel="canonical" href="https://www.landenzee.nl/index.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Restaurant Zeeuws Verlangen - Welkom">
+    <meta property="og:description"
+        content="Restaurant Zeeuws Verlangen bij Resort Land &amp; Zee in Scharendijke – geniet van verfijnde Zeeuwse gerechten, verse seizoensproducten en een adembenemend uitzicht op de kust.">
+    <meta property="og:url" content="https://www.landenzee.nl/index.html">
+    <meta property="og:image" content="https://www.landenzee.nl/images/hero.webp">
+    <meta property="og:locale" content="nl_NL">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:site_name" content="Zeeuws Verlangen">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/index.html">
@@ -22,16 +34,50 @@
     {
       "@context": "https://schema.org",
       "@type": "Restaurant",
-      "name": "Zeeuws Verlangen",
-      "image": "https://www.landenzee.nl/images/hero.webp",
-      "@id": "https://www.landenzee.nl",
+      "name": "Restaurant Zeeuws Verlangen",
+      "alternateName": "Zeeuws Verlangen",
+      "description": "Restaurant Zeeuws Verlangen bij Resort Land & Zee in Scharendijke – geniet van verfijnde Zeeuwse keuken, verse seizoensproducten en een adembenemend uitzicht op de kust.",
+      "image": [
+        "https://www.landenzee.nl/images/hero.webp",
+        "https://www.landenzee.nl/images/a_la_carte.webp",
+        "https://www.landenzee.nl/images/cocktails.webp"
+      ],
+      "@id": "https://www.landenzee.nl/#restaurant",
       "url": "https://www.landenzee.nl",
       "telephone": "+31111671785",
+      "email": "info@landenzee.nl",
+      "servesCuisine": ["Zeeuwse keuken", "Vis en zeevruchten", "Europees"],
+      "priceRange": "€€–€€€",
+      "acceptsReservations": true,
+      "menu": "https://www.landenzee.nl/alacarte.html",
+      "hasMenu": [
+        {
+          "@type": "Menu",
+          "name": "A la Carte",
+          "url": "https://www.landenzee.nl/alacarte.html"
+        },
+        {
+          "@type": "Menu",
+          "name": "Halfpension",
+          "url": "https://www.landenzee.nl/halfpension.html"
+        },
+        {
+          "@type": "Menu",
+          "name": "Lunch",
+          "url": "https://www.landenzee.nl/lunch.html"
+        },
+        {
+          "@type": "Menu",
+          "name": "Drinks & Cocktails",
+          "url": "https://www.landenzee.nl/drinks.html"
+        }
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Rampweg 28",
         "addressLocality": "Scharendijke",
         "postalCode": "4326 LK",
+        "addressRegion": "Zeeland",
         "addressCountry": "NL"
       },
       "geo": {
@@ -42,13 +88,8 @@
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
+          "Monday", "Tuesday", "Wednesday", "Thursday",
+          "Friday", "Saturday", "Sunday"
         ],
         "opens": "12:00",
         "closes": "22:00"
@@ -472,3 +513,5 @@
     </footer>
 
 </body>
+
+</html>

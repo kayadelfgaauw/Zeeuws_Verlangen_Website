@@ -7,6 +7,16 @@
     <title>A la Carte - Restaurant Zeeuws Verlangen</title>
     <meta name="description"
         content="Explore the à la carte menu at Restaurant Zeeuws Verlangen – from freshly caught fish and shellfish to refined meat dishes, inspired by the Zeeland coast.">
+    <link rel="canonical" href="https://www.landenzee.nl/en/alacarte.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="A la Carte - Restaurant Zeeuws Verlangen">
+    <meta property="og:description"
+        content="Explore the à la carte menu at Restaurant Zeeuws Verlangen – from freshly caught fish and shellfish to refined meat dishes, inspired by the Zeeland coast.">
+    <meta property="og:url" content="https://www.landenzee.nl/en/alacarte.html">
+    <meta property="og:image" content="https://www.landenzee.nl/images/a_la_carte.webp">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:site_name" content="Zeeuws Verlangen">
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/alacarte.html">
@@ -17,6 +27,50 @@
     <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/main.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Menu",
+      "name": "A la Carte",
+      "url": "https://www.landenzee.nl/en/alacarte.html",
+      "description": "A la carte menu at Restaurant Zeeuws Verlangen – refined Zeeland cuisine with fresh, seasonal ingredients.",
+      "hasMenuSection": [
+        {
+          "@type": "MenuSection",
+          "name": "Starters",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Soup of the day", "offers": { "@type": "Offer", "price": "6.50", "priceCurrency": "EUR" } },
+            { "@type": "MenuItem", "name": "Beef Carpaccio", "description": "With rocket, pine nuts, Parmesan and truffle mayonnaise", "offers": { "@type": "Offer", "price": "14.50", "priceCurrency": "EUR" } },
+            { "@type": "MenuItem", "name": "Zeeland Shrimps", "description": "With garlic butter and bread", "offers": { "@type": "Offer", "price": "13.50", "priceCurrency": "EUR" } }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Fish",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Sea bass", "description": "Pan-fried sea bass fillet with seasonal vegetables", "offers": { "@type": "Offer", "price": "24.50", "priceCurrency": "EUR" } },
+            { "@type": "MenuItem", "name": "Fish & Chips", "description": "Cod in beer batter with chips and ravigote sauce", "offers": { "@type": "Offer", "price": "19.50", "priceCurrency": "EUR" } }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Meat",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Entrecôte", "description": "300 gram entrecôte with herb butter and seasonal vegetables", "offers": { "@type": "Offer", "price": "29.50", "priceCurrency": "EUR" } },
+            { "@type": "MenuItem", "name": "Spareribs", "description": "Slow-cooked spareribs with barbecue sauce and chips", "offers": { "@type": "Offer", "price": "22.50", "priceCurrency": "EUR" } }
+          ]
+        },
+        {
+          "@type": "MenuSection",
+          "name": "Desserts",
+          "hasMenuItem": [
+            { "@type": "MenuItem", "name": "Dame Blanche", "offers": { "@type": "Offer", "price": "8.50", "priceCurrency": "EUR" } },
+            { "@type": "MenuItem", "name": "Crème brûlée", "offers": { "@type": "Offer", "price": "9.50", "priceCurrency": "EUR" } }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body class="menu-page">

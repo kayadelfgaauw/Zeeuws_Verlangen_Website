@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.landenzee.nl/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/index.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.landenzee.nl/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/index.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.landenzee.nl/de/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/index.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- A la Carte -->
+  <url>
+    <loc>https://www.landenzee.nl/alacarte.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/alacarte.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/alacarte.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/alacarte.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/alacarte.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.landenzee.nl/en/alacarte.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/alacarte.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/alacarte.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/alacarte.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/alacarte.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.landenzee.nl/de/alacarte.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/alacarte.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/alacarte.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/alacarte.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/alacarte.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Halfpension -->
+  <url>
+    <loc>https://www.landenzee.nl/halfpension.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/halfpension.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/halfpension.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/halfpension.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/halfpension.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.landenzee.nl/en/halfpension.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/halfpension.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/halfpension.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/halfpension.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/halfpension.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.landenzee.nl/de/halfpension.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/halfpension.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/halfpension.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/halfpension.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/halfpension.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Drinks & Cocktails -->
+  <url>
+    <loc>https://www.landenzee.nl/drinks.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/drinks.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/drinks.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/drinks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/drinks.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.landenzee.nl/en/drinks.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/drinks.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/drinks.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/drinks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/drinks.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.landenzee.nl/de/drinks.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/drinks.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/drinks.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/drinks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/drinks.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Lunch -->
+  <url>
+    <loc>https://www.landenzee.nl/lunch.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/lunch.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/lunch.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/lunch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/lunch.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.landenzee.nl/en/lunch.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/lunch.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/lunch.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/lunch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/lunch.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.landenzee.nl/de/lunch.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/lunch.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/lunch.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/lunch.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/lunch.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Juridisch / Legal / Rechtliches -->
+  <url>
+    <loc>https://www.landenzee.nl/juridisch.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/juridisch.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/rechtliches.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/juridisch.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.landenzee.nl/en/legal.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/juridisch.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/rechtliches.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/juridisch.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.landenzee.nl/de/rechtliches.html</loc>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://www.landenzee.nl/juridisch.html"/>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.landenzee.nl/en/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.landenzee.nl/de/rechtliches.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.landenzee.nl/juridisch.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
