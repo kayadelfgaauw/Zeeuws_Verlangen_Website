@@ -120,4 +120,27 @@ document.addEventListener('DOMContentLoaded', () => {
             revealElements.forEach(el => el.classList.add('revealed'));
         }
     }
+
+    // Reveal On Scroll Animation (Specific for contact section)
+    const revealOnScrollElements = document.querySelectorAll('.reveal-on-scroll');
+    if (revealOnScrollElements.length > 0) {
+        if ('IntersectionObserver' in window) {
+            const observer2 = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer2.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            revealOnScrollElements.forEach(el => observer2.observe(el));
+        } else {
+            // Fallback for older browsers or if disabled
+            revealOnScrollElements.forEach(el => el.classList.add('is-visible'));
+        }
+    }
 });
