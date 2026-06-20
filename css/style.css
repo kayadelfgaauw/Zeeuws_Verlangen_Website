@@ -2022,3 +2022,209 @@ input:checked+.slider:before {
         /* Aspect ratios are maintained by the image's existing aspect-ratio declarations */
     }
 }
+
+/* --- Reservation Popup Modal --- */
+.custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 68, 87, 0.7); /* Deep theme-colored overlay */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 10001; /* Ensure it is above header and fullscreen menu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.custom-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.custom-modal-card {
+    background-color: var(--color-bg-light);
+    width: 90%;
+    max-width: 550px;
+    padding: 50px 40px;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transform: translateY(30px);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.custom-modal-overlay.active .custom-modal-card {
+    transform: translateY(0);
+}
+
+.custom-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    line-height: 1;
+    color: var(--color-text);
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+
+.custom-modal-close:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.custom-modal-title {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-transform: none; /* Keep natural casing for heading, like 'Reserveren?' */
+    letter-spacing: 1px;
+}
+
+.custom-modal-text {
+    font-family: var(--font-body);
+    font-size: 1.4rem;
+    color: var(--color-text);
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+.custom-modal-text a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.custom-modal-text a:hover {
+    color: var(--color-accent);
+}
+
+.custom-modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modal-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    font-family: 'Sunflare', serif;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.modal-btn.btn-call {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 1px solid var(--color-primary);
+}
+
+.modal-btn.btn-call:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 95, 115, 0.15);
+}
+
+.modal-btn.btn-mail {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.modal-btn.btn-mail:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 95, 115, 0.15);
+}
+
+/* Adjust layout on small screens */
+@media (max-width: 576px) {
+    .custom-modal-card {
+        padding: 40px 20px;
+        width: 92%;
+    }
+    
+    .custom-modal-title {
+        font-size: 2rem;
+    }
+    
+    .custom-modal-text {
+        font-size: 1.25rem;
+        margin-bottom: 25px;
+    }
+    
+    .custom-modal-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .modal-btn {
+        width: 100%;
+        padding: 10px 25px;
+    }
+}
+
+/* --- Image-based Menu Pages CSS --- */
+.menu-images-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu-images-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    background-color: #fcfbfa; /* subtle loader background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-images-container img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* For dark menu pages (like drinks) */
+.drinks-page .menu-images-container img {
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+    background-color: #1a2733;
+}
+
+.drinks-page .menu-images-container img:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}

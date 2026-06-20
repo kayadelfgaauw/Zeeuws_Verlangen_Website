@@ -143,4 +143,109 @@ document.addEventListener('DOMContentLoaded', () => {
             revealOnScrollElements.forEach(el => el.classList.add('is-visible'));
         }
     }
+
+    // 3. Contact Reservation Popup Modal
+    const showReservationPopup = () => {
+        // Check if already shown in this session
+        if (sessionStorage.getItem('reservationPopupShown')) {
+            return;
+        }
+
+        // Determine language from html lang attribute
+        const htmlLang = document.documentElement.lang.toLowerCase();
+        let lang = 'nl';
+        if (htmlLang.startsWith('de')) {
+            lang = 'de';
+        } else if (htmlLang.startsWith('en')) {
+            lang = 'en';
+        }
+
+        // Define translations
+        const contentData = {
+            nl: {
+                title: 'Reserveren?',
+                text: 'Bel naar <a href="tel:+31111671785" class="modal-link">+31 (0)111 671 785</a> of mail naar <a href="mailto:info@landenzee.nl" class="modal-link">info@landenzee.nl</a>.',
+                btnCall: 'BEL ONS',
+                btnMail: 'E-MAIL ONS'
+            },
+            de: {
+                title: 'Reservieren?',
+                text: 'Rufen Sie uns an unter <a href="tel:+31111671785" class="modal-link">+31 (0)111 671 785</a> oder schreiben Sie eine E-Mail an <a href="mailto:info@landenzee.nl" class="modal-link">info@landenzee.nl</a>.',
+                btnCall: 'ANRUFEN',
+                btnMail: 'E-MAIL SENDEN'
+            },
+            en: {
+                title: 'Reservations?',
+                text: 'Call us at <a href="tel:+31111671785" class="modal-link">+31 (0)111 671 785</a> or email us at <a href="mailto:info@landenzee.nl" class="modal-link">info@landenzee.nl</a>.',
+                btnCall: 'CALL US',
+                btnMail: 'EMAIL US'
+            }
+        };
+
+        const t = contentData[lang];
+
+        // Create overlay element
+        const overlay = document.createElement('div');
+        overlay.className = 'custom-modal-overlay';
+        overlay.id = 'booking-modal-overlay';
+        overlay.setAttribute('role', 'dialog');
+        overlay.setAttribute('aria-modal', 'true');
+        overlay.setAttribute('aria-labelledby', 'booking-modal-title');
+
+        // Create modal structure
+        overlay.innerHTML = `
+            <div class="custom-modal-card">
+                <button class="custom-modal-close" id="booking-modal-close" aria-label="Sluit pop-up">&times;</button>
+                <div class="custom-modal-content">
+                    <h2 class="custom-modal-title" id="booking-modal-title">${t.title}</h2>
+                    <p class="custom-modal-text">${t.text}</p>
+                    <div class="custom-modal-actions">
+                        <a href="tel:+31111671785" class="modal-btn btn-call">${t.btnCall}</a>
+                        <a href="mailto:info@landenzee.nl" class="modal-btn btn-mail">${t.btnMail}</a>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        document.body.appendChild(overlay);
+
+        const closeBtn = overlay.querySelector('#booking-modal-close');
+
+        // Function to close modal
+        const closeModal = () => {
+            overlay.classList.remove('active');
+            sessionStorage.setItem('reservationPopupShown', 'true');
+            if (typeof lenis !== 'undefined') {
+                lenis.start();
+            }
+            // Remove from DOM after transition completes
+            setTimeout(() => {
+                overlay.remove();
+            }, 400);
+        };
+
+        // Event listeners
+        closeBtn.addEventListener('click', closeModal);
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                closeModal();
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && overlay.classList.contains('active')) {
+                closeModal();
+            }
+        });
+
+        // Show modal with a 2-second delay
+        setTimeout(() => {
+            overlay.classList.add('active');
+            if (typeof lenis !== 'undefined') {
+                lenis.stop();
+            }
+        }, 2000);
+    };
+
+    // Trigger popup
+    showReservationPopup();
 });
